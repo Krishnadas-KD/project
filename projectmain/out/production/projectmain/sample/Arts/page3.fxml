@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mpanal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0088ff; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Arts.Controller">
+   <children>
+      <TableView layoutX="210.0" layoutY="75.0" prefHeight="485.0" prefWidth="431.0">
+        <columns>
+          <TableColumn prefWidth="69.0" text="Chest no" />
+          <TableColumn prefWidth="116.0" text="Name" />
+            <TableColumn prefWidth="109.0" text="Department" />
+            <TableColumn prefWidth="64.0" text="Event" />
+            <TableColumn prefWidth="71.0" text="Rank" />
+        </columns>
+      </TableView>
+      <Button fx:id="printBU" layoutX="729.0" layoutY="471.0" mnemonicParsing="false" onAction="#printit" prefHeight="62.0" prefWidth="174.0" text="Print">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="654.0" layoutY="142.0" prefHeight="221.0" prefWidth="325.0">
+         <children>
+            <Pane fx:id="panel" layoutY="2.0" prefHeight="221.0" prefWidth="325.0">
+               <children>
+                  <ImageView fitHeight="174.0" fitWidth="325.0" layoutX="-4.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/download.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="117.0" layoutY="178.0" prefHeight="29.0" prefWidth="162.0" text="Label" textFill="RED">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

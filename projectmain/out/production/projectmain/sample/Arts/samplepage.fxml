@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Arts.Controller">
+   <children>
+      <Pane fx:id="printPane" layoutY="-2.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ff0000;" />
+      <Label layoutX="257.0" layoutY="111.0" text="Label" />
+      <Button layoutX="205.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
+      <ToggleButton layoutX="-21.0" layoutY="188.0" mnemonicParsing="false" text="ToggleButton" />
+      <SplitMenuButton layoutX="24.0" layoutY="72.0" mnemonicParsing="false" text="SplitMenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
